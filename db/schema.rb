@@ -10,6 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2020_12_04_222805) do
 
   create_table "users", force: :cascade do |t|
@@ -20,5 +21,8 @@ ActiveRecord::Schema.define(version: 2020_12_04_222805) do
     t.string "password_digest"
     t.index ["email"], name: "index_users_on_email", unique: true
   end
+=======
+ActiveRecord::Schema.define(version: 0) do
+>>>>>>> 513d37ba347d5e2c65635d422391e314bdd62494
 
 end

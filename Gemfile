@@ -10,7 +10,11 @@ gem 'faker',                      '2.11.0'
 gem 'will_paginate',              '3.3.0'
 gem 'bootstrap-will_paginate',    '1.0.0'
 gem 'bootstrap-sass',             '3.4.1'
+<<<<<<< HEAD
 gem 'puma',                       '5.1.0'
+=======
+gem 'puma',                       '4.3.5'
+>>>>>>> 513d37ba347d5e2c65635d422391e314bdd62494
 gem 'sass-rails',                 '6.0.0'
 gem 'webpacker',                  '4.2.2'
 gem 'turbolinks',                 '5.2.1'
@@ -48,4 +52,8 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 # Uncomment the following line if you're running Rails
 # on a native Windows system:
+<<<<<<< HEAD
  #gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+=======
+ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+>>>>>>> 513d37ba347d5e2c65635d422391e314bdd62494
