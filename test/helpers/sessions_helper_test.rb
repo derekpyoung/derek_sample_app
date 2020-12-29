@@ -16,4 +16,9 @@ end
     @user.update_attribute(:remember_digest, User.digest(User.new_token))
     assert_nill current_user
   end
+
+  #stores the url trying to be accessed
+  def store_location
+    session[:forwarding_url] = request.original_url if request.get?
+  end
 end
