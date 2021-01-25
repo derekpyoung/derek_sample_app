@@ -46,7 +46,10 @@ class User < ApplicationRecord
   def send_activation_email
     UserMailer.account_activation(self).deliver_now
   end
-
+  # Activates an account.
+  def activate
+  update_columns(activated: true)
+  end
 
   private
   # converts email to downcase.
@@ -54,10 +57,7 @@ class User < ApplicationRecord
     self.email = email.downcase
   end
 
-  # Activates an account.
-  def activate
-  update_columns(activated: FILL_IN, activated_at: FILL_IN)
-  end
+
 
   # Sends activation email.
 
